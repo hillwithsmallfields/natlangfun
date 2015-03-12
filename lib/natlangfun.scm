@@ -1,5 +1,5 @@
 ;;;; natlangfun.scm --- natural language descriptions using functional programming
-;;; Time-stamp: <2015-02-08 21:17:56 jcgs>
+;;; Time-stamp: <2015-03-12 23:16:51 jcgs>
 
 (define-module (natlangfun)
   )
@@ -29,3 +29,35 @@ a script description, it is a string containing the characters used in
 that script, in their conventional sorting order for that language,
 with spaces between them, and with symbols that share a place in the
 sorting order grouped in square brackets.")
+
+(define-macro (template template-name template-parameters . templated-parts)
+  "Define a template for a language construct, to be filled in with the given parts.")
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; word database lookups ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(define (word-translation word)
+  ;; todo: translation database lookup
+  )
+
+(define (gender-of noun)
+  ;; todo: translation database lookup
+  )
+
+;;;;;;;;;;;;;
+;; joining ;;
+;;;;;;;;;;;;;
+
+(define (words . word-containers)
+  ;; todo: traverse word-containers, concatenating the strings with spaces inbetween?  Or should I leave it as a list (perhaps just flatten it?)
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;; top-level drivers ;;
+;;;;;;;;;;;;;;;;;;;;;;;
+
+(define (translate structure)
+  ;; todo: translate the words of STRUCTURE
+  )
