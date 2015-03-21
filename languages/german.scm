@@ -31,3 +31,6 @@
 		     noun)
 	      (words adjectives
 		     noun)))
+
+(template (statement subject verb object)
+	  (words (nominative subject) (person-number verb) (accusative object) "."))
