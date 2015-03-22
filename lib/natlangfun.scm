@@ -1,5 +1,5 @@
 ;;;; natlangfun.scm --- natural language descriptions using functional programming
-;;; Time-stamp: <2015-03-12 23:16:51 jcgs>
+;;; Time-stamp: <2015-03-22 22:26:52 jcgs>
 
 (define-module (natlangfun)
   )
@@ -25,10 +25,10 @@ The language's ISO 639-3 code is given as @var{code}.
 
 The writing systems are described by @var{scripts}, which is a list of
 lists of script-type and script-name.  If a third element is given for
-a script description, it is a string containing the characters used in
-that script, in their conventional sorting order for that language,
-with spaces between them, and with symbols that share a place in the
-sorting order grouped in square brackets.")
+a script description, it is a vector containing the characters used in
+that script, in their conventional sorting order for that language, as
+strings, with symbols that share a place in the sorting order grouped
+in square brackets in the same string.")
 
 (define-macro (template template-name template-parameters . templated-parts)
   "Define a template for a language construct, to be filled in with the given parts.")
