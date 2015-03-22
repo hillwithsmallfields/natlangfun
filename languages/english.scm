@@ -8,3 +8,9 @@
 
 (template (statement subject verb object)
 	  (words (nominative subject) (person-number verb) (accusative object) "."))
+
+(template (noun-phrase noun adjectives)
+	  (words adjectives noun))
+
+(template (verb-phrase verb adverbs)
+	  (words verb adverbs))

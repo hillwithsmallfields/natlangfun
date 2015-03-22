@@ -1,5 +1,5 @@
 ;;;; natlangfun.scm --- natural language descriptions using functional programming
-;;; Time-stamp: <2015-03-22 22:26:52 jcgs>
+;;; Time-stamp: <2015-03-22 22:28:54 jcgs>
 
 (define-module (natlangfun)
   )
@@ -51,7 +51,7 @@ in square brackets in the same string.")
 ;;;;;;;;;;;;;
 
 (define (words . word-containers)
-  ;; todo: traverse word-containers, concatenating the strings with spaces inbetween?  Or should I leave it as a list (perhaps just flatten it?)
+  ;; todo: traverse word-containers, flattening it, concatenating the strings with spaces inbetween?  Or should I leave it as a list (perhaps just flatten it?)
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;
