@@ -1,1 +1,4 @@
-(language-description swahili () SWH ((latin alphabet)))
+(language-description Swahili
+		      ()
+		      SWH
+		      ((latin alphabet)))

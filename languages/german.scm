@@ -2,7 +2,9 @@
 		      Deutsch
 		      DEU
 		      ((latin alphabet
-			      "[aä] b c d e f g h i j k l m n [oö] p q r [sß] t [uü] v w x y z")))
+			      ["[aä]" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k"
+			       "l" "m" "n" "[oö]" "p" "q" "r" "[sß]" "t"
+			       "[uü]" "v" "w" "x" "y" "z"])))
 
 (template definite-article-for (noun noun-case noun-number)
 	  (case number

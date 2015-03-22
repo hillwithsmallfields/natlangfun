@@ -1,1 +1,4 @@
-(language-description (swedish scandinavian germanic indo-european) svensk SWE ((latin alphabet)))
+(language-description (Swedish Scandinavian Germanic Indo-European) 
+		      Svensk
+		      SWE
+		      ((latin alphabet)))

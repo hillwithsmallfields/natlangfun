@@ -1,1 +1,4 @@
-(language-description (russian slavonic indo-european) () RUS ((cyrillic alphabet)))
+(language-description (Russian Slavonic Indo-European)
+		      ()
+		      RUS
+		      ((cyrillic alphabet)))

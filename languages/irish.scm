@@ -2,4 +2,5 @@
 		      Gaeilge
 		      GLE
 		      ((latin alphabet
-			      "a á b c d e é f g h i í l m n o ó p r s t u ú")))
+			      ["[aá]" "b" "c" "d" "[eé]" "f" "g" "h" "[ií]"
+			       "l" "m" "n" "[oó]" "p" "r" "s" "t" "[uú]"])))

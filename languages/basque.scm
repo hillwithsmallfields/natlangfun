@@ -1,1 +1,4 @@
-(language-description Basque Euskara EUS ((latin alphabet)))
+(language-description Basque
+		      Euskara
+		      EUS
+		      ((latin alphabet)))

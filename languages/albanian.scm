@@ -2,4 +2,7 @@
 		      Shqip
 		      ALN
 		      ((latin alphabet
-			      "A B C Ç D Dh E Ë F G Gj H I J K L Ll M N Nj O P Q R Rr S Sh T Th U V X Xh Y Z Zh")))
+			      ["a" "b" "c" "ç" "d" "dh" "e" "ë" "f" "g" "gj" 
+			       "h" "i" "j" "k" "l" "ll" "m" "n" "nj" "o" "p" 
+			       "q" "r" "rr" "s" "sh" "t" "th" "u" "v" "x" "xh"
+			       "y" "z" "zh"])))
