@@ -1,10 +1,10 @@
-;;;; natlangfun.scm --- natural language descriptions using functional programming
-;;; Time-stamp: <2015-03-22 22:28:54 jcgs>
+;;;; natlangfun.clj --- natural language descriptions using functional programming
+;;; Time-stamp: <2015-04-03 21:14:35 jcgs>
 
 (define-module (natlangfun)
   )
 
-(define-macro (language-description language-name own-name code scripts)
+(defmacro [language-description language-name own-name code scripts]
   "Describe a language which in the reference language is called
 @var{language-name}.
 
@@ -30,19 +30,18 @@ that script, in their conventional sorting order for that language, as
 strings, with symbols that share a place in the sorting order grouped
 in square brackets in the same string.")
 
-(define-macro (template template-name template-parameters . templated-parts)
+(defmacro [template template-name template-parameters & templated-parts]
   "Define a template for a language construct, to be filled in with the given parts.")
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; word database lookups ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(define (word-translation word)
+(defn [word-translation word]
   ;; todo: translation database lookup
   )
 
-(define (gender-of noun)
+(defn [gender-of noun]
   ;; todo: translation database lookup
   )
 
@@ -50,7 +49,7 @@ in square brackets in the same string.")
 ;; joining ;;
 ;;;;;;;;;;;;;
 
-(define (words . word-containers)
+(defn [words & word-containers]
   ;; todo: traverse word-containers, flattening it, concatenating the strings with spaces inbetween?  Or should I leave it as a list (perhaps just flatten it?)
   )
 
@@ -58,6 +57,6 @@ in square brackets in the same string.")
 ;; top-level drivers ;;
 ;;;;;;;;;;;;;;;;;;;;;;;
 
-(define (translate structure)
+(defn [translate structure]
   ;; todo: translate the words of STRUCTURE
   )
