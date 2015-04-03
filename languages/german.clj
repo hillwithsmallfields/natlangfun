@@ -8,23 +8,26 @@
 
 (template definite-article-for (noun noun-case noun-number)
 	  (case number
-	    ((plural) (case noun-case
-			((nominative accusative) "die")
-			((genitive) "der")
-			((dative) "den"))
-	     ((singular) (case (gender-of noun) 
-			   (masculine (case noun-case
-					((nominative)  "der")
-					((accusative) "den")
-					((genitive) "des")
-					((dative) "dem")))
-			   (feminine (case noun-case
-				       ((nominative accusative) "die")
-				       ((genitive dative) "der")))
-			   (neuter (case noun-case
-				     ((nominative accusative) "das")
-				     ((genitive)  "des")
-				     ((dative) "dem"))))))))
+	    plural (case noun-case
+                     (nominative accusative) "die"
+                     genitive "der"
+                     dative "den")
+            singular (case (gender-of noun) 
+                       masculine (case noun-case
+                                   nominative  "der"
+                                   accusative "den"
+                                   genitive "des"
+                                   dative "dem")
+                       feminine (case noun-case
+                                  (nominative accusative) "die"
+                                  (genitive dative) "der")
+                       neuter (case noun-case
+                                (nominative accusative) "das"
+                                genitive  "des"
+                                dative "dem"))))))
+
+(template articled-noun (noun article-type noun-case noun-number)
+          )
 
 (template noun-phrase (definite noun-case noun-number noun adjectives)
 	  (if definite
