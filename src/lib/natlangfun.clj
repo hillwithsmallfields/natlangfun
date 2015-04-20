@@ -1,8 +1,7 @@
 ;;;; natlangfun.clj --- natural language descriptions using functional programming
-;;; Time-stamp: <2015-04-03 21:14:35 jcgs>
+;;; Time-stamp: <2015-04-20 21:10:10 jcgs>
 
-(define-module (natlangfun)
-  )
+(ns natlanfun.core)
 
 (defmacro [language-description language-name own-name code scripts]
   "Describe a language which in the reference language is called
@@ -60,3 +59,11 @@ in square brackets in the same string.")
 (defn [translate structure]
   ;; todo: translate the words of STRUCTURE
   )
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+;; vocabulary reading ;;
+;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn [read-vocabulary vocab-file]
+  (let [raw-maps (parse-csv (slurp vocab-file))]
+    ))
