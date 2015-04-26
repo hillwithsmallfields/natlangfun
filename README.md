@@ -1,7 +1,8 @@
 # natlangfun
 Natural language description using functional programming
 
-A project to describe natural languages using Scheme.
+A project to describe natural languages using a functional language
+(clojure).
 
 I hope to be able to generate phrases and sentences with correct
 grammar, from function calls that describe the structure of the
