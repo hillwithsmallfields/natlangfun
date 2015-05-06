@@ -1,9 +1,21 @@
-"#TYPE","#FORM","#SENSE","#RANK","ENG","ALN"
-"pronoun", "nominative", "",,"I","unë"
-"pronoun", "nominative", "singular",,"you","ti"
-"pronoun", "nominative", "",,"he","ai"
-"pronoun", "nominative", "",,"she","ajo"
-"pronoun", "nominative", "",,"we","ne"
-"pronoun", "nominative", "",,"you","ju"
-"pronoun", "nominative", "feminine",,"they","ato"
-"pronoun", "nominative", "masculine",,"they","ata"
+#RANK,#TYPE,#FORM,#SENSE,#NUMBER,#PERSON,#GENDER,ENG,ALN
+,pronoun,nominative,,singular,1,,I,unë
+,pronoun,nominative,,singular,2,,you,ti
+,pronoun,nominative,,singular,3,masculine,he,ai
+,pronoun,nominative,,singular,3,feminine,she,ajo
+,pronoun,nominative,,plural,1,,we,ne
+,pronoun,nominative,,plural,2,,you,ju
+,pronoun,nominative,,plural,3,feminine,they,ato
+,pronoun,nominative,,plural,3,masculine,they,ata
+,verb,present,indicative,singular,1,,am,jam
+,verb,present,indicative,singular,2,,"are, art",je
+,verb,present,indicative,singular,3,,is,është
+,verb,present,indicative,plural,1,,are,jemi
+,verb,present,indicative,plural,2,,are,jeni
+,verb,present,indicative,plural,3,,are,janë
+,verb,present,indicative,singular,1,,have,kam
+,verb,present,indicative,singular,2,,have,ke
+,verb,present,indicative,singular,3,,has,ka
+,verb,present,indicative,plural,1,,have,kemi
+,verb,present,indicative,plural,2,,have,keni
+,verb,present,indicative,plural,3,,have,kanë
