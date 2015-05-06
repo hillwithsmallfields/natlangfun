@@ -1,7 +1,17 @@
 ;;;; natlangfun.clj --- natural language descriptions using functional programming
-;;; Time-stamp: <2015-05-06 21:51:36 jcgs>
+;;; Time-stamp: <2015-05-06 21:53:31 jcgs>
 
 (ns natlangfun.core)
+
+(defrecord language
+    [
+     reference-name
+     own-name
+     iso-code
+     scripts
+     templates
+     vocabulary
+     ])
 
 (defmacro language-description
   "Describe a language which in the reference language is called
