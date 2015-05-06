@@ -6,7 +6,7 @@
 			       "l" "m" "n" "[oö]" "p" "q" "r" "[sß]" "t"
 			       "[uü]" "v" "w" "x" "y" "z"])))
 
-(template definite-article-for (noun noun-case noun-number)
+(template [definite-article-for noun noun-case noun-number]
 	  (case number
 	    plural (case noun-case
                      (nominative accusative) "die"
@@ -26,10 +26,10 @@
                                 genitive  "des"
                                 dative "dem"))))))
 
-(template articled-noun (noun article-type noun-case noun-number)
+(template [articled-noun noun article-type noun-case noun-number]
           )
 
-(template noun-phrase (definite noun-case noun-number noun adjectives)
+(template [noun-phrase definite noun-case noun-number noun adjectives]
 	  (if definite
 	      (words (definite-article-for noun noun-case noun-number)
 		     adjectives
@@ -37,5 +37,5 @@
 	      (words adjectives
 		     noun)))
 
-(template (statement subject verb object)
+(template [statement subject verb object]
 	  (words (nominative subject) (person-number verb) (accusative object) "."))
