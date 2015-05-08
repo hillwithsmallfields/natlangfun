@@ -1,7 +1,10 @@
 ;;;; natlangfun.clj --- natural language descriptions using functional programming
-;;; Time-stamp: <2015-05-06 21:53:31 jcgs>
+;;; Time-stamp: <2015-05-08 21:37:16 jcgs>
 
 (ns natlangfun.core)
+
+(use 'csv-map.core)        ; TODO: I think this might go inside the ns
+(require '[clojure.java.io :as io]) ; TODO: I think this might go inside the ns
 
 (defrecord language
     [
@@ -73,9 +76,26 @@
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
-;; vocabulary reading ;;
+;; definition reading ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;
 
+(def language-directory "~/open-projects/natlangfun/languages/")
+(def vocabulary-directory "~/open-projects/natlangfun/vocabulary/")
+(def source-language "eng")
+
+(def languages {})
+
+(defun [read-language language-name]
+  ;; TODO: get the vocabulary file name from source-language and the language code field of the language we are loading
+  (load-file
+   (io/file language-directory (join "." 
+                                     (list language-name ".clj")))))
+
 (defn [read-vocabulary vocab-file]
-  (let [raw-maps (parse-csv (slurp vocab-file))]
+  ;; TODO: I think clojure has a special syntax for a nested call like this
+  (let [raw-maps (parse-csv 
+                  (slurp
+                   (io/file vocabulary-directory
+                            (join "."
+                                  (list vocab-file "csv")))))]
     ))
