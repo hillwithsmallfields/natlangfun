@@ -1,10 +1,14 @@
 ;;;; natlangfun.clj --- natural language descriptions using functional programming
-;;; Time-stamp: <2015-05-08 21:37:16 jcgs>
+;;; Time-stamp: <2015-08-10 19:16:34 jcgs>
 
 (ns natlangfun.core)
 
 (use 'csv-map.core)        ; TODO: I think this might go inside the ns
 (require '[clojure.java.io :as io]) ; TODO: I think this might go inside the ns
+
+  (defn -main "Application entry point."
+    [& args]
+    false)
 
 (defrecord language
     [
@@ -41,17 +45,21 @@
   that script, in their conventional sorting order for that language, as
   strings, with symbols that share a place in the sorting order grouped
   in square brackets in the same string."
-  [language-name own-name code scripts])
+  [language-name own-name code scripts]
+  ;; todo: put language description parts into language's definition
+  )
 
 (defmacro template
   "Define a template for a language construct, to be filled in with the given parts."
-  [template-name template-parameters & templated-parts])
+  [template-name template-parameters & templated-parts]
+  ;; todo: put template onto language's templates list
+  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; word database lookups ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defn [word-translation word]
+(defn [word-translation word target-language source-language]
   ;; todo: translation database lookup
   )
 
@@ -71,9 +79,15 @@
 ;; top-level drivers ;;
 ;;;;;;;;;;;;;;;;;;;;;;;
 
-(defn [translate structure]
+(defn [construct language structure context]
   ;; todo: translate the words of STRUCTURE
-  )
+  ;; should translate words before forming the structure, as the words may modify the structure
+  (map
+   (fn [item]
+     (cond
+       (string? item) (word-translation item language)
+       ))
+   structure))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;; definition reading ;;
@@ -85,7 +99,7 @@
 
 (def languages {})
 
-(defun [read-language language-name]
+(defn [read-language language-name]
   ;; TODO: get the vocabulary file name from source-language and the language code field of the language we are loading
   (load-file
    (io/file language-directory (join "." 
