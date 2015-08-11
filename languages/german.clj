@@ -27,10 +27,16 @@
                                 dative "dem"))))))
 
 (template [articled-noun noun article-type noun-case noun-number]
-          )
+          (case article-type
+            definite (words (definite-article-for noun noun-case noun-number)
+                            noun)
+            indefinite (words (indefinite-article-for noun noun-case noun-number)
+                              noun)
+            null noun))
 
-(template [noun-phrase definite noun-case noun-number noun adjectives]
-	  (if definite
+;; todo: make the `definite' parameter become a variable in an environment around the use of the template, using a special form to set it
+(template [noun-phrase noun-case noun-number noun adjectives]
+	  (if (definite? context)
 	      (words (definite-article-for noun noun-case noun-number)
 		     adjectives
 		     noun)
