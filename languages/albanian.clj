@@ -24,3 +24,4 @@
 						       feminine "ato")))))
 
 							
+;; negative verb: nuk or s' before verb
