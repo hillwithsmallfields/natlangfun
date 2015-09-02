@@ -7,7 +7,7 @@
 			       "q" "r" "rr" "s" "sh" "t" "th" "u" "v" "x" "xh"
 			       "y" "z" "zh"])))
 
-(template [pronoun pronoun-case person number gender]
+(template pronoun [pronoun-case person number gender]
 	  (case pronoun-case
 	     	nominative (case number
 	     		   	 singular (case person
