@@ -1,4 +1,4 @@
-(language-description (romanian romance italic indo-european)
+(language-description (Romanian Romance Italic Indo-European)
 		      "limba română"
 		      RON
 		      ((latin alphabet
