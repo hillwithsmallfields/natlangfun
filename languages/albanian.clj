@@ -23,5 +23,22 @@
 					       	       masculine "ata"
 						       feminine "ato")))))
 
-							
+
+(template greeting [time]
+          (case time
+            morning "mirëmëngjes"
+            afternoon "mirëdita"
+            evening "mirëmbrëma"))
+
+(template parting [time]
+          (case time
+            night "natën e mirë"
+            soon "shihemi shpejt"
+            default "mirë u pafshim"))
+
+(template response (reply expectation)
+          (case resp
+            affirmative "po"
+            negative "jo"))
+
 ;; negative verb: nuk or s' before verb
