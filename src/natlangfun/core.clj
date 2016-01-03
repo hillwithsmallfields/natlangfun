@@ -1,10 +1,9 @@
 ;;;; natlangfun.clj --- natural language descriptions using functional programming
-;;; Time-stamp: <2015-08-10 19:16:34 jcgs>
+;;; Time-stamp: <2015-08-13 19:52:15 jcgs>
 
-(ns natlangfun.core)
-
-(use 'csv-map.core)        ; TODO: I think this might go inside the ns
-(require '[clojure.java.io :as io]) ; TODO: I think this might go inside the ns
+(ns natlangfun.core
+  (:require csv-map.core
+            [clojure.java.io :as io]))
 
   (defn -main "Application entry point."
     [& args]
