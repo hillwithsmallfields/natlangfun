@@ -1,82 +1,82 @@
-"#RANK","#TYPE","#FORM","#SENSE","#NUMBER","#PERSON","#GENDER","ENG","ALN"
-,"pronoun","nominative",,"singular",1,,"I","unë"
-,"pronoun","nominative",,"singular",2,,"you","ti"
-,"pronoun","nominative",,"singular",3,"masculine","he","ai"
-,"pronoun","nominative",,"singular",3,"feminine","she","ajo"
-,"pronoun","nominative",,"plural",1,,"we","ne"
-,"pronoun","nominative",,"plural",2,,"you","ju"
-,"pronoun","nominative",,"plural",3,"feminine","they","ato"
-,"pronoun","nominative",,"plural",3,"masculine","they","ata"
-,"verb","present","indicative","singular",1,,"am","jam"
-,"verb","present","indicative","singular",2,,"are, art","je"
-,"verb","present","indicative","singular",3,,"is","është"
-,"verb","present","indicative","plural",1,,"are","jemi"
-,"verb","present","indicative","plural",2,,"are","jeni"
-,"verb","present","indicative","plural",3,,"are","janë"
-,"verb","present","indicative","singular",1,,"have","kam"
-,"verb","present","indicative","singular",2,,"have","ke"
-,"verb","present","indicative","singular",3,,"has","ka"
-,"verb","present","indicative","plural",1,,"have","kemi"
-,"verb","present","indicative","plural",2,,"have","keni"
-,"verb","present","indicative","plural",3,,"have","kanë"
-,"verb","present","indicative","singular",1,,"to be called"," quhem"
-,,,,,,,"thank you","faleminderit"
-,,,,,,,"pleased","gëzohem"
-,,,,,,,"pleased to meet you","gëzohem"
-,"interrogative",,,,,,"who","kush"
-,"interjection",,,,,,"excuse me","më falni"
-,"adverb",,,,,,"well","mirë"
-,,,,,,,"good evening","mirëmbrëma"
-,,,,,,,"good morning","mirëmëngjes"
+#RANK,#TYPE,#FORM,#SENSE,#NUMBER,#PERSON,#GENDER,ENG,ALN
+1,pronoun,nominative,,singular,1,,I,unë
+1,pronoun,nominative,,singular,2,,you,ti
+1,pronoun,nominative,,singular,3,masculine,he,ai
+1,pronoun,nominative,,singular,3,feminine,she,ajo
+1,pronoun,nominative,,plural,1,,we,ne
+1,pronoun,nominative,,plural,2,,you,ju
+1,pronoun,nominative,,plural,3,feminine,they,ato
+1,pronoun,nominative,,plural,3,masculine,they,ata
+1,verb,present,indicative,singular,1,,am,jam
+1,verb,present,indicative,singular,2,,"are, art",je
+1,verb,present,indicative,singular,3,,is,është
+1,verb,present,indicative,plural,1,,are,jemi
+1,verb,present,indicative,plural,2,,are,jeni
+1,verb,present,indicative,plural,3,,are,janë
+1,verb,present,indicative,singular,1,,have,kam
+1,verb,present,indicative,singular,2,,have,ke
+1,verb,present,indicative,singular,3,,has,ka
+1,verb,present,indicative,plural,1,,have,kemi
+1,verb,present,indicative,plural,2,,have,keni
+1,verb,present,indicative,plural,3,,have,kanë
+1,verb,present,indicative,singular,1,,"to be called",quhem
+,,,,,,,"thank you",faleminderit
+,,,,,,,pleased,gëzohem
+,,,,,,,"pleased to meet you",gëzohem
+,interrogative,,,,,,who,kush
+,interjection,,,,,,"excuse me","më falni"
+,adverb,,,,,,well,mirë
+,,,,,,,"good evening",mirëmbrëma
+,,,,,,,"good morning",mirëmëngjes
 ,,,,,,,"good night","natën e mirë"
-,,,,,,,"and you","po"
-,"interrogative",,,,,,"how","si"
-,"adverb",,,,,,"very","shumë"
-,"honorific",,,,,,"mrs","zonjë"
-,"honorific",,,,,,"mr","zoti"
-0,"number","cardinal",,,,,"zero","zero"
-0,"number","cardinal",,,,,"one","një"
-0,"number","cardinal",,,,,"two","dy"
-0,"number","cardinal",,,,"m","three","tre"
-0,"number","cardinal",,,,"f","three","tri"
-0,"number","cardinal",,,,,"four","katër"
-0,"number","cardinal",,,,,"five","pesë"
-0,"number","cardinal",,,,,"six","gjashtë"
-0,"number","cardinal",,,,,"seven","shtatë"
-0,"number","cardinal",,,,,"eight","tetë"
-0,"number","cardinal",,,,,"nine","nënë"
-0,"number","cardinal",,,,,"ten","dhjetë"
-0,"number","cardinal",,,,,"eleven","njëmbëdhjetë"
-0,"number","cardinal",,,,,"twelve","dymbëdhjetë"
-0,"number","cardinal",,,,,"thirteen","trembëdhjetë"
-0,"number","cardinal",,,,,"fourteen","katërmbëdhjetë"
-0,"number","cardinal",,,,,"fifteen","pesëmbëdhjetë"
-0,"number","cardinal",,,,,"sixteen","gjashtëmbëdhjetë"
-0,"number","cardinal",,,,,"seventeen","shtatëmbëdhjetë"
-0,"number","cardinal",,,,,"eighteen","tetëmbëdhjetë"
-0,"number","cardinal",,,,,"nineteen","nëntëmbëdhjetë"
-0,"number","cardinal",,,,,"twenty","njëzet"
-0,"number","cardinal",,,,,"twenty-one",""
-0,"number","cardinal",,,,,"thirty","tridhjetë"
-0,"number","cardinal",,,,,"forty","dyzet"
-0,"number","cardinal",,,,,"fifty","pesëdhjetë"
-0,"number","cardinal",,,,,"sixty","ghashtëdhjetë"
-0,"number","cardinal",,,,,"seventy","shtatëdhjetë"
-0,"number","cardinal",,,,,"eighty","tetëdhjetë"
-0,"number","cardinal",,,,,"ninety","nëntëdhjetë"
-0,"number","cardinal",,,,,"hundred","njëqind"
-0,"number","cardinal",,,,,"thousand","një mijë"
-0,"number","cardinal",,,,,"million",""
-0,"number","cardinal",,,,,"billion",""
-0,"number","ordinal",,,,,"first",""
-0,"number","ordinal",,,,,"second",""
-0,"number","ordinal",,,,,"third",""
-0,"number","ordinal",,,,,"fourth",""
-0,"number","ordinal",,,,,"fifth",""
-0,"number","ordinal",,,,,"sixth",""
-0,"number","ordinal",,,,,"seventh",""
-0,"number","ordinal",,,,,"eighth",""
-0,"number","ordinal",,,,,"ninth",""
-0,"number","ordinal",,,,,"tenth",""
-0,"number","ordinal",,,,,"eleventh",""
-0,"number","ordinal",,,,,"twelvth",""
+,,,,,,,"and you",po
+,interrogative,,,,,,how,si
+,adverb,,,,,,very,shumë
+,honorific,,,,,,mrs,zonjë
+,honorific,,,,,,mr,zoti
+0,number,cardinal,,0,,,zero,zero
+0,number,cardinal,,1,,,one,një
+0,number,cardinal,,2,,,two,dy
+0,number,cardinal,,3,,m,three,tre
+0,number,cardinal,,3,,f,three,tri
+0,number,cardinal,,4,,,four,katër
+0,number,cardinal,,5,,,five,pesë
+0,number,cardinal,,6,,,six,gjashtë
+0,number,cardinal,,7,,,seven,shtatë
+0,number,cardinal,,8,,,eight,tetë
+0,number,cardinal,,9,,,nine,nënë
+0,number,cardinal,,10,,,ten,dhjetë
+0,number,cardinal,,11,,,eleven,njëmbëdhjetë
+0,number,cardinal,,12,,,twelve,dymbëdhjetë
+0,number,cardinal,,13,,,thirteen,trembëdhjetë
+0,number,cardinal,,14,,,fourteen,katërmbëdhjetë
+0,number,cardinal,,15,,,fifteen,pesëmbëdhjetë
+0,number,cardinal,,16,,,sixteen,gjashtëmbëdhjetë
+0,number,cardinal,,17,,,seventeen,shtatëmbëdhjetë
+0,number,cardinal,,18,,,eighteen,tetëmbëdhjetë
+0,number,cardinal,,19,,,nineteen,nëntëmbëdhjetë
+0,number,cardinal,,20,,,twenty,njëzet
+0,number,cardinal,,21,,,twenty-one,
+0,number,cardinal,,30,,,thirty,tridhjetë
+0,number,cardinal,,40,,,forty,dyzet
+0,number,cardinal,,50,,,fifty,pesëdhjetë
+0,number,cardinal,,60,,,sixty,ghashtëdhjetë
+0,number,cardinal,,70,,,seventy,shtatëdhjetë
+0,number,cardinal,,80,,,eighty,tetëdhjetë
+0,number,cardinal,,90,,,ninety,nëntëdhjetë
+0,number,cardinal,,100,,,hundred,njëqind
+0,number,cardinal,,1000,,,thousand,"një mijë"
+0,number,cardinal,,1000000,,,million,
+0,number,cardinal,,1000000000,,,billion,
+0,number,ordinal,,1,,,first,
+0,number,ordinal,,2,,,second,
+0,number,ordinal,,3,,,third,
+0,number,ordinal,,4,,,fourth,
+0,number,ordinal,,5,,,fifth,
+0,number,ordinal,,6,,,sixth,
+0,number,ordinal,,7,,,seventh,
+0,number,ordinal,,8,,,eighth,
+0,number,ordinal,,9,,,ninth,
+0,number,ordinal,,10,,,tenth,
+0,number,ordinal,,11,,,eleventh,
+0,number,ordinal,,12,,,twelvth,
