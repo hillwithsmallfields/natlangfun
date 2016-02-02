@@ -18,6 +18,8 @@
 0,question,,,,,,"Where is the $transport to $place?",
 0,noun,,,,,,bus,
 0,noun,,,,,,train,
+0,noun,,,,,,car
+0,noun,,,,,,station
 0,noun,,,,,,plain,
 0,noun,,,,,,metro,
 0,noun,,,,,,tram,
